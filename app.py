@@ -146,12 +146,12 @@ def get_thread_title(thread_id):
 
 # Streamlit UI
 def main():
-    st.set_page_config(page_title="IIF Database Chat", page_icon="🤖", layout="wide")
+    st.set_page_config(page_title="GYS Database Chat", page_icon="🤖", layout="wide")
     
     # Initialize SQLite database
     init_sqlite_db()
     
-    # st.title("IIF Database Chat Interface")
+    # st.title("GYS Database Chat Interface")
 
     # Current thread display
     if "current_thread_id" in st.session_state and st.session_state.current_thread_id is not None:
@@ -167,7 +167,7 @@ def main():
     
     # Sidebar with thread management
     with st.sidebar:
-        st.title("IIF SQL Database Chat")
+        st.title("GYS SQL Database Chat")
         st.divider()
         st.header("Chat Threads")
         
